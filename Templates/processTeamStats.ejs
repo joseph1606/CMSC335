@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Process Team Statistics</title>
+    <style>
+        html {
+            border-style: double;
+            border-color: orange;
+            border-width: 0.5rem;
+        }
+        h1 {
+            text-align: center;
+            color: orangered;
+            text-decoration-line: underline;
+        }
+        body{
+            margin: 1rem;
+        }
+        strong {
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Fantasy Team Information</h1>
+
+    <h2>Here are some statistics about each of the players you have selected:</h2>
+
+    <div>
+        <%- teamInformation %> 
+    </div>
+
+    <div>
+        <p>Your Team Rating is: <strong><%- teamRating %></strong></p>
+    </div>
+
+    <div>
+        <ul>
+            <li>To go back Home, click on: <a href="/">Home Page</a></li>
+            <li>To create a Team, click on: <a href="/createTeam">Create Team</a></li>
+            <li>To Search a team, click on: <a href="/searchTeam">Search Team</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

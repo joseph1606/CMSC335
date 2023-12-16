@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Team</title>
+    <style>
+        html {
+            border-style: double;
+            border-color: orange;
+            border-width: 0.5rem;
+        }
+        h1 {
+            text-align: center;
+            color: orangered;
+            text-decoration-line: underline;
+        }
+        body{
+            margin: 1rem;
+        }
+        label{
+            color: orangered;
+        }
+        #teamName{
+            margin-left: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        #playerOneName {
+            margin-left: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        #playerTwoName {
+            margin-left: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        #playerThreeName {
+            margin-left: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        #playerFourName {
+            margin-left: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        #playerFiveName {
+            margin-left: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Create Your Ideal Team</h1>
+
+    <h2>Enter your Team Name and the Names of your (5) Players below: </h2>
+    
+    <p> 
+        Note: Please write the <em>Correct Full Name</em> of the player and make sure it is exact!
+        For example: "Nikola Jokic" would be considered as <strong>Invalid</strong>... However, "Nikola Jokić" would be correct!
+    </p>
+
+    <form method="post" action="/processTeamStats">
+
+        <label><strong> Your team name is: </strong></label><input type="text" id="teamName" name="teamName" required>
+
+        <br>
+        <br>
+
+        <label><strong> Player 1: </strong></label><input type="text" id="playerOneName" name="playerOneName" required> 
+        <br>
+        <label><strong> Player 2: </strong></label><input type="text" id="playerTwoName" name="playerTwoName" required> 
+        <br>
+        <label><strong> Player 3: </strong></label><input type="text" id="playerThreeName" name="playerThreeName" required> 
+        <br>
+        <label><strong> Player 4: </strong></label><input type="text" id="playerFourName" name="playerFourName" required> 
+        <br>
+        <label><strong> Player 5: </strong></label><input type="text" id="playerFiveName" name="playerFiveName" required> 
+
+        <br>
+        <br>
+
+        <input type="submit" value="Submit Your Team">
+        <input type="reset" value="Reset Your Team">
+
+        <ul>
+            <li>To go back Home, click on: <a href="/">Home Page</a></li>
+            <li>To Search a team, click on: <a href="/searchTeam">Search Team</a></li>
+        </ul>
+
+        <br>
+    
+    </form>
+
+</body>
+
+</html>

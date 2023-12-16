@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Team</title>
+    <style>
+        html {
+            border-style: double;
+            border-color: orange;
+            border-width: 0.5rem;
+        }
+        h1 {
+            text-align: center;
+            color: orangered;
+            text-decoration-line: underline;
+        }
+        body {
+            margin: 1rem;
+        }
+        label {
+            color: orangered;
+        }
+        #teamName {
+            margin-left: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Search Up Your Team</h1>
+
+    <h2>Enter the Team Name you wish to search for:</h2>
+
+    <form method="post" action="/processSearchTeam">
+
+        <label><strong> Enter your Team Name: </strong></label> <input type="text" id="teamName" name="teamName">
+
+        <p>Note: If Two Teams happen to have the same name, the Team that was recently registered would be showcased!</p>
+            
+        <br>
+
+        <input type="submit" value="Find Your Team">
+
+        <ul>
+            <li>To go back Home, click on: <a href="/">Home Page</a></li>
+            <li>To create a Team, click on: <a href="/createTeam">Create Team</a></li>
+        </ul>
+
+        <br>
+    
+    </form>
+
+</body>
+
+</html>
